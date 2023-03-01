@@ -33,19 +33,28 @@ body {
 }
 .equilibrium {
     background-image: url(/images/icon-view.svg);
-}
-#crystal {
+    background-color: rgb(43, 149, 153);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* position: relative; */
     width: 80%;
     height: 200px;
-    position: absolute;
-    top: 1.5rem;
-    left: 1.8rem;
+    margin-top: 1.6em;
+    margin-left: 1.7em;
+}
+.equilibrium:hover #crystal {
+    opacity: 0.3;
+}
+#crystal {
+    width: 100%;
+    height: 200px;
+    opacity: 1;
 }
 #contents {
     width: 80%;
     position: absolute;
     left: 1.5rem;
-    top: 15.5em;
+    top: 15em;
 }
 h3 {
     color: var(--White);
