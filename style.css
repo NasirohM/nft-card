@@ -32,7 +32,7 @@ body {
     position: relative;
 }
 .equilibrium {
-    background-image: url(./images/icon-view.svg);
+    background-image: url("./images/icon-view.svg");
     background-color: rgb(43, 149, 153);
     background-repeat: no-repeat;
     background-position: center;
