@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+body {
+    background-color: var(--main-BG);
+    font-family: 'Outfit', sans-serif;
+}
+.parent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.child {
+    height: 400px;
+    width: 300px;
+    background-color: var(--card-BG);
+    border-radius: 12px;
+    position: relative;
+}
+.equilibrium {
+    background-image: url(/images/icon-view.svg);
+}
+#crystal {
+    width: 80%;
+    height: 200px;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.8rem;
+}
+#contents {
+    width: 80%;
+    position: absolute;
+    left: 1.5rem;
+    top: 15.5em;
+}
+h3 {
+    color: var(--White);
+    margin-bottom: 10px;
+}
+.num:hover {
+    color: var(--Cyan);
+}
+.texts p {
+    font-size: 13px;
+    color: var(--Soft-blue);
+    font-weight: lighter;
+    margin-bottom: 10px;
+
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    margin-right: 0;
+}
+.gold {
+    display: flex;
+    width: 40%;
+}
+.gold img{
+    width: 10px;
+    height: 15px;
+    margin-right: 5px;
+}
+.gold p{
+    color: var(--Cyan);
+    font-weight: bold;
+    font-size: 13px;
+}
+.clock {
+    display: flex;
+    width: 40%;
+}
+.clock img {
+    width: 10px;
+    height: 15px;
+    margin-right: 5px;
+}
+.clock p {
+    color: var(--Soft-blue);
+    font-size: 13px;
+}
+.clock p:hover {
+    color: var(--Cyan);
+}
+.avatar {
+    border-top: 1px solid var(--line);
+    display: flex;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    align-items: center;
+}
+.avatar > img{
+    height: 30px;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.avatar p {
+    font-size: 13px;
+    color: var(--Soft-blue);
+}
+.name {
+    color: var(--White);
+    font-weight: bold;
+}
+.name:hover {
+    color: var(--Cyan);
+}
